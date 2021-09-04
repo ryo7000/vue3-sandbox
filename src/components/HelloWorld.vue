@@ -1,5 +1,6 @@
 <script lang="tsx">
 import { ref, defineComponent } from 'vue'
+import { VBtn } from 'vuetify/components'
 
 export default defineComponent({
   name: 'HelloWorld',
@@ -30,7 +31,7 @@ export default defineComponent({
           <a href="https://v3.vuejs.org/" target="_blank">Vue 3 Docs</a>
         </p>
 
-        <button type="button" onClick={() => count.value++}>count is: { count.value }</button>
+        <VBtn onClick={() => count.value++}>count is: { count.value }</VBtn>
         <p>
           Edit
           <code>components/HelloWorld.vue</code> to test hot module replacement.

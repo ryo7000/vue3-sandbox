@@ -2,14 +2,19 @@
 import { defineComponent } from 'vue';
 import logo from './assets/logo.png'
 import HelloWorld from './components/HelloWorld.vue'
+import { VApp, VMain } from 'vuetify/components'
 
 export default defineComponent({
   name: 'App',
   setup() {
     return () => (
       <>
-        <img alt="Vue logo" src={logo} />
-        <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
+        <VApp>
+          <VMain>
+            <img alt="Vue logo" src={logo} />
+            <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
+          </VMain>
+        </VApp>
       </>
     )
   }

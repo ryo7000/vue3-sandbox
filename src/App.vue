@@ -1,11 +1,11 @@
 <script lang="tsx">
-import { defineComponent } from 'vue';
-import logo from './assets/logo.png'
-import HelloWorld from './components/HelloWorld.vue'
-import { VApp, VMain } from 'vuetify/components'
+import { defineComponent } from "vue";
+import logo from "./assets/logo.png";
+import HelloWorld from "./components/HelloWorld.vue";
+import { VApp, VMain } from "vuetify/components";
 
 export default defineComponent({
-  name: 'App',
+  name: "App",
   setup() {
     return () => (
       <>
@@ -16,9 +16,9 @@ export default defineComponent({
           </VMain>
         </VApp>
       </>
-    )
-  }
-})
+    );
+  },
+});
 </script>
 
 <style>
